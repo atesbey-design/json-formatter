@@ -10,15 +10,33 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "JSON Formatter - Format, Validate and Share JSON",
   description: "A modern JSON formatter and validator with advanced features",
-  keywords: "json formatter, json validator, json editor, json tools",
+  keywords: "json formatter, json validator, json editor, json tools, json beautifier, json parser",
   authors: [{ name: "JSON Formatter" }],
   creator: "JSON Formatter",
   publisher: "JSON Formatter",
   robots: "index, follow",
+  metadataBase: new URL("https://json-formatter-pearl.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "#000" },
+  ],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://jsonformatter.dev",
+    url: "https://json-formatter-pearl.vercel.app/",
     title: "JSON Formatter - Format, Validate and Share JSON",
     description: "A modern JSON formatter and validator with advanced features",
     siteName: "JSON Formatter",
